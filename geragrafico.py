@@ -8,6 +8,9 @@ def main():
     valores = leitor.getValores()
     print(valores)
 
+    for serie in valores:
+       plt.plot(serie)
+
     plt.plot(valores)
     
     plt.ylabel('Valores de entrada')
